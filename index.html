@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./asset/css/style.css">       
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">   
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+    <title>Proyecto Final</title>
+</head>
+<body>
+
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">                    
+                    <img src="./Imagenes/logo.png" id="logo">  
+                    <p>CUIDADANIA ITALINA</p>                            
+                </div>                
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                                <img src="./Imagenes/cart.png" id="img-carrito">                               
+                                <div id="carrito">
+                                        
+                                        <table id="lista-carrito" class="u-full-width">
+                                            <thead>
+                                                <tr>
+                                                    <th>Imagen</th>
+                                                    <th>Nombre</th>
+                                                    <th>Precio</th>
+                                                    <th>Cantidad</th>
+                                                    
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody></tbody>
+                                        </table>
+                                           
+                                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        </header>
+    
+        <main>
+    
+        <div class="barra">
+            <div class="container">
+                <div class="row">
+                        <div class="four columns icono icono1">
+                            <p>ClASES DE ITALIANO A1 - C2 <br>
+                            CLASES 100% VIRTUALES BASADO EN TUS NECESIDADES PERSONALES O LABORALES</p>
+                        </div>
+                        <div class="four columns icono icono2">
+                            <p>ARMAMOS TU ARBOL GENIALOGICO <br>
+                            CONTROL DE DOCUMENTACION <br> ENVIOS INTERNACIONALES </p>
+                        </div>
+                        <div class="four columns icono icono3">
+                            <p>BUSCAMOS ACTAS EN TODA ITALIA <br>
+                            BUSCAMOS ACTAS EN ARGENTINA <br> APOSTILLAMOS </p>
+                        </div>
+                </div>
+            </div>
+    
+        </div>
+    
+        <div id="lista-servicios" class="container">
+            <h1 id="encabezado" class="encabezado">SERVICIOS DISPONIBLES</h1>
+            <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./Imagenes/PARROQUIALES.png" class="imagen-servicio u-full-width">
+                        <div class="info-card">
+                            <h4>Actas Comunes</h4>
+                            <p>Incluye pedido al Comune</p>                            
+                            <p class="precio">€150  <span class="u-pull-right ">€120</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                            
+                        </div>
+                    </div> 
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="./Imagenes/ACTA.png" class="imagen-servicio u-full-width">
+                            <div class="info-card">
+                                <h4>Actas Parroquiales </h4>
+                                <p>Pueden ser actas o Vicarios</p>                                
+                                <p class="precio">€200  <span class="u-pull-right ">€150</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="./Imagenes/curso1.jpg" class="imagen-servicio u-full-width">
+                            <div class="info-card">
+                                <h4>Clases de Italiano</h4>
+                                <p>Precio por 2 hs</p>                                
+                                <p class="precio">€10  <span class="u-pull-right ">€7</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                            </div>
+                        </div> 
+                </div>
+    
+            </div> 
+            
+            <br>
+
+            <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="./Imagenes/PASAPORTE (1).png" class="imagen-servicio u-full-width">
+                        <div class="info-card">
+                            <h4>Ciudadania</h4>
+                            <p>Acompañamiento Virtual</p>                            
+                            <p class="precio">€200  <span class="u-pull-right ">€150</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                        </div>
+                    </div> 
+                </div>                
+            </div>
+         
+        </div>
+        
+        <h2>OTROS SERVICIOS</h2>
+       <div id="contenido">
+         <div class="row d-flex justify-center">
+            <div class="four columns justify-center">
+              <div class="card h-50">
+                <img src="./Imagenes/Arbol Genealogico.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Otras Opciones</h5>          
+                  <p>Ofrecemos otros tipos de servicios que dependen de diferentes factores para cotizar el precio. Contactenos!!!</p>       
+                </div>
+                <div class="card-footer">
+                  <button type="Button" id="consultar">Consultar</button>
+                </div>
+              </div>
+            </div>         
+          </div>
+        </div>
+
+        <h2>FORMULARIO DE CONTACTO</h2>
+
+        <body class="min-h-screen bg-slate-300">
+            <div class="max-w-3xl mx-auto p-10">                
+                <div class="bg-white rounded-lg shadow-xl p-10 mt-5">
+                    <form id="formulario" class="space-y-3">
+                        <div class="flex flex-col space-y-2">
+                            <label for="email" class="font-regular font-medium">Email:</label>
+                            <input id="email" type="email" name="email" placeholder="Ej: jose@gmail.com" class="border border-gray-300 px-3 py-2 rounded-lg"  />
+                        </div>
+        
+                        <div class="flex flex-col space-y-2">
+                            <label for="asunto" class="font-regular font-medium">Asunto:</label>
+                            <input id="asunto" type="text" name="asunto" placeholder="Asunto Email" class="border border-gray-300 px-3 py-2 rounded-lg" />
+                        </div>
+        
+                        <div class="flex flex-col space-y-2">
+                            <label for="mensaje" class="font-regular font-medium">Mensaje:</label>
+                            <textarea id="mensaje" type="text" name="mensaje" placeholder="Mensaje de Email" class="border border-gray-300 px-3 py-2 rounded-lg h-36"></textarea>
+                        </div>
+        
+                        <div id="botones" class="flex gap-5">
+                            <button 
+                                type="submit"
+                                class="flex-1 bg-pink-600 text-white flex justify-center gap-2 items-center p-3 opacity-50"
+                                disabled
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                                </svg>
+                                Enviar
+                            </button>
+        
+                            <button 
+                                class="flex-1 bg-gray-800 text-white flex justify-center gap-2 items-center p-3"
+                                type="reset"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                                </svg>
+                                Reset
+                            </button>
+                        </div>           
+                    </form>
+
+                    <div id="spinner" class="hidden justify-center mt-10">
+
+                      <div class="sk-chase">
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                      </div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+    </main>
+     
+    
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="row">
+                        <div class="four columns">
+                                <nav id="principal" class="menu">
+                                    <a class="enlace" href="#">¿Quienes Somos?</a>
+                                    <a class="enlace" href="#">Nuestros Servicios</a>                                    
+                                </nav>
+                        </div>
+                        <div class="four columns">
+                                <nav id="secundaria" class="menu">
+                                    <a class="enlace" href="#">Contacto</a>
+                                    <a class="enlace" href="#">Whatsapp</a>
+                                    <a class="enlace" href="#">Intagram</a>
+                                </nav>
+                        </div>
+                </div>
+            </div>
+        </footer>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+    <script src="./app.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
+
+
+
+
